@@ -4,7 +4,7 @@ var stage = new PIXI.Stage();
 stage.scale.x = 10;
 stage.scale.y = 10;
 var canvas = document.getElementById('canvas');
-var renderer = PIXI.autoDetectRenderer(1200, 600, { view: canvas });
+var renderer = PIXI.autoDetectRenderer(600, 600, { view: canvas });
 var g = new PIXI.Graphics();
 
 g.lineStyle(0.2, 0xFFFF00);
@@ -20,6 +20,7 @@ g.endFill();
 stage.addChild(g);
 
 requestAnimationFrame(animate);
+
 
 function animate() {
     requestAnimationFrame(
